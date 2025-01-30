@@ -16,7 +16,7 @@ app.use("/customer/auth/*", function auth(req,res,next){
         next();
       } else {
         // Unauthorized access
-        res.status(401).json({ message: "Unauthorized: Please log in." });
+        res.status(200).json({ message: "Unauthorized: Please log in." });
       }
 });
  
